@@ -1,189 +1,195 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap");
 :root {
-  --mainColor: #2196f3;
-  --color2: #f44336;
+   --mainColor: #2196f3;
+   --color2: #f44336;
 }
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 body {
-  height: 100vh;
-  font-family: "Cairo", sans-serif;
-  background-image: radial-gradient(
-    circle,
-    #3a2f0b,
-    #3d2512,
-    #371d19,
-    #2c1a1d,
-    #1f171c,
-    #191519,
-    #131114,
-    #0d0d0d,
-    #0a0a0a,
-    #070707,
-    #030303,
-    #000000
-  );
+   height: 100vh;
+   font-family: "Cairo", sans-serif;
+   background-image: radial-gradient(
+      circle,
+      #3a2f0b,
+      #3d2512,
+      #371d19,
+      #2c1a1d,
+      #1f171c,
+      #191519,
+      #131114,
+      #0d0d0d,
+      #0a0a0a,
+      #070707,
+      #030303,
+      #000000
+   );
 }
 aside {
-  width: 800px;
-  margin: 0 auto;
+   width: 800px;
+   margin: 0 auto;
 }
 h1 {
-  background-color: var(--mainColor);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+   background-color: var(--mainColor);
+   color: #fff;
+   text-align: center;
+   padding: 10px;
 }
 nav {
-  text-align: center;
+   text-align: center;
 }
 nav label {
-  color: #fff;
+   color: #fff;
 }
 nav #select {
-  width: 100px;
-  margin-top: 10px;
+   width: 100px;
+   margin-top: 10px;
 }
 nav p {
-  background-color: #fff;
-  text-align: center;
-  font-weight: 600;
-  padding: 10px;
-  margin: 10px 0;
-  width: 100%;
+   background-color: #fff;
+   text-align: center;
+   font-weight: 600;
+   padding: 10px;
+   margin: 10px 0;
+   width: 100%;
 }
 nav p span {
-  color: green;
+   color: green;
 }
 header button {
-  margin: 20px auto;
-  padding: 20px 50px;
-  width: 200px;
-  display: block;
-  background-color: var(--color2);
-  color: #fff;
-  font-size: 2rem;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px #333;
-  cursor: pointer;
-  font-weight: 600;
-  font-family: "Courier New", Courier, monospace;
+   margin: 20px auto;
+   padding: 20px 50px;
+   width: 200px;
+   display: block;
+   background-color: var(--color2);
+   color: #fff;
+   font-size: 2rem;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 0 1px 5px #333;
+   cursor: pointer;
+   font-weight: 600;
+   font-family: "Courier New", Courier, monospace;
 }
+header button:hover {
+   background-color: green;
+   box-shadow: 0 2px 5px #888;
+}
+
 aside .word {
-  color: var(--mainColor);
-  font-size: 4.5rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.1;
-  user-select: none;
-  display: none;
+   color: var(--mainColor);
+   font-size: 4.5rem;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1.1;
+   user-select: none;
+   display: none;
 }
 aside input {
-  text-align: center;
-  width: 500px;
-  padding: 10px;
-  margin: 15px auto;
-  display: block;
-  border: 2px solid var(--mainColor);
-  caret-color: var(--mainColor);
-  font-size: 1.3rem;
-  outline: none;
-  border-radius: 8px;
+   text-align: center;
+   width: 500px;
+   padding: 10px;
+   margin: 15px auto;
+   display: block;
+   border: 2px solid var(--mainColor);
+   caret-color: var(--mainColor);
+   font-size: 1.3rem;
+   outline: none;
+   border-radius: 8px;
 }
 main {
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding: 20px;
+   width: 100%;
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 5px;
+   padding: 20px;
 }
 main span {
-  background-color: var(--mainColor);
-  padding: 5px 18px;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: 600;
-  user-select: none;
+   background-color: var(--mainColor);
+   padding: 5px 18px;
+   border-radius: 8px;
+   color: #fff;
+   font-weight: 600;
+   user-select: none;
 }
 footer {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
-  background-color: #fff;
-  margin: 10px auto;
-  padding: 10px 20px;
-  position: relative;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   justify-content: space-between;
+   background-color: #fff;
+   margin: 10px auto;
+   padding: 10px 20px;
+   position: relative;
 }
 aside .result {
-  position: absolute;
-  top: 250%;
-  left: 49%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1;
-  color: limegreen;
-  display: none;
+   position: absolute;
+   top: 250%;
+   left: 49%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 600;
+   line-height: 1;
+   color: limegreen;
+   display: none;
 }
 aside .result.loss {
-  color: red;
+   color: red;
 }
 aside .last-info {
-  display: flex;
-  align-items: flex-start;
+   display: flex;
+   align-items: flex-start;
 }
 aside .scoring {
-  background-color: #fff;
-  width: fit-content;
-  text-align: right;
-  margin-left: auto;
-  padding: 5px 15px 7px;
-  border-radius: 6px;
-  transition: 0.5s;
+   background-color: #fff;
+   width: fit-content;
+   text-align: right;
+   margin-left: auto;
+   padding: 5px 15px 7px;
+   border-radius: 6px;
+   transition: 0.5s;
 }
 aside .scoring .buttons {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-  gap: 5px;
+   display: flex;
+   justify-content: space-between;
+   padding: 5px 0;
+   gap: 5px;
 }
 aside .scoring button,
 .last-info .instruction button {
-  background-color: var(--mainColor);
-  color: #fff;
-  padding: 2px 7px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+   background-color: var(--mainColor);
+   color: #fff;
+   padding: 2px 7px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
 }
 aside .scoring button:hover,
 .last-info .instruction button:hover {
-  background-color: rgba(255, 0, 0, 0.61);
-  box-shadow: 0 2px 5px #666;
+   background-color: rgba(255, 0, 0, 0.61);
+   box-shadow: 0 2px 5px #666;
 }
 aside .scoring .clr.hide {
-  display: none;
+   display: none;
 }
 aside .scoring p,
 .last-info .instruction p {
-  color: #333;
-  line-height: 1.4;
+   color: #333;
+   line-height: 1.4;
+   padding: 0 10px;
 }
 aside .scoring p.hide,
 .last-info .instruction p.hide {
-  display: none;
+   display: none;
 }
 .last-info .instruction {
-  background-color: #fff;
-  width: fit-content;
-  padding: 5px 20px 7px;
-  border-radius: 6px;
-  transition: 0.5s;
+   background-color: #fff;
+   width: fit-content;
+   padding: 5px 20px 7px;
+   border-radius: 6px;
+   transition: 0.5s;
 }
