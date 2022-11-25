@@ -34,15 +34,15 @@
 // Array Of Words
 const words = [
    "Hello",
+   "Code",
+   "Javascript",
+   "Town",
+   "Country",
+   "Testing",
    "Programming",
-   // "Code",
-   // "Javascript",
-   // "Town",
-   // "Country",
-   // "Testing",
-   // "Youtube",
-   // "Linkedin",
-   // "Twitter",
+   "Youtube",
+   "Linkedin",
+   "Twitter",
 ];
 const lvls = {
    Easy: 5,
