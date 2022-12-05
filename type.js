@@ -39,7 +39,7 @@ const words = [
    "Town",
    "Country",
    "Testing",
-   "Programming",
+   // "Programming",
    "Youtube",
    "Linkedin",
    "Twitter",
